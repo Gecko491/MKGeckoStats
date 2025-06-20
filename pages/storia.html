@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mario Kart Gecko Stats</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    /* 🔷 Barra in alto */
+    header {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 20px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 5px solid black; /* ⬅️ BORDO PIÙ SPESSO */
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav li {
+      margin-left: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 15px; /* ⬅️ TESTO PIÙ GRANDE */
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #2c2c2c;
+    padding: 10px 0;
+    margin-top: 0;
+    border: 1px solid black;
+    border-radius: 4px;
+    min-width: 180px;
+    z-index: 1000;
+  }
+
+  nav li {
+    position: relative;
+  }
+
+  nav li:hover > ul {
+    display: block;
+  }
+
+  nav ul ul li {
+    display: block;
+    margin-left: 0;
+    padding: 0 20px;
+  }
+
+  nav ul ul li a {
+    font-size: 14px;
+    display: block;
+    color: white;
+    text-decoration: none;
+  }
+
+  nav ul ul li a:hover {
+    background-color: #333;
+  }
+
+  nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px 10px; /* aggiunto padding per migliorare spaziatura */
+}
+
+nav ul ul {
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+nav li:hover > ul {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+}
+  </style>
+</head>
+<body>
+
+  <!-- 🔷 Barra in alto -->
+<header>
+  <h1>Mario Kart Gecko Stats</h1>
+<nav>
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="mkworld/index.html">MKWorld</a>
+      <ul>
+        <li><a href="mkworld/prove.html">Prove a tempo</a></li>
+        <li><a href="mkworld/registry.html">Registry</a></li>
+      </ul>
+    </li>
+    <li><a href="mk8dx/index.html">MK8DX</a>
+      <ul>
+        <li><a href="mk8dx/prove.html">Prove a tempo</a></li>
+        <li><a href="mk8dx/registry.html">Registry</a></li>
+      </ul>
+    </li>
+    <li><a href="mkwii/index.html">MKWii</a>
+      <ul>
+        <li><a href="mkwii/prove.html">Prove a tempo</a></li>
+        <li><a href="mkwii/registry.html">Registry</a></li>
+      </ul>
+    </li>
+    <li><strong><span style="color: rgb(255, 193, 193); text-decoration: underline">Storia</span></strong></li>
+    <li><a href="ruoli.html">Ruoli nella Community</a></li>
+    <li><a href="info.html">Info</a></li>
+  </ul>
+</nav>
+</header>
+
+  <!-- 🔽 Contenuto principale -->
+  <main>
+    <p>Benvenuto nel mio sito personale dedicato alle statistiche di Mario Kart!</p>
+  </main>
+
+</body>
+</html>

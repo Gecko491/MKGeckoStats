@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mario Kart Gecko Stats - Info</title>
+  <style>
+    nav {
+      font-family: sans-serif;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav li {
+      display: inline-block;
+      position: relative;
+      margin-right: 10px;
+    }
+    nav li a {
+      text-decoration: none;
+      color: black;
+      padding: 2px 5px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    nav li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      padding: 2px 0;
+      margin: 0;
+      list-style: none;
+      background: white;
+      border: 1px solid #ccc;
+      z-index: 1000;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    nav li:hover > ul {
+      display: block;
+    }
+    nav li ul li {
+      display: block;
+      margin: 0;
+    }
+    nav li ul li a {
+      display: block;
+      padding: 4px 8px;
+      white-space: nowrap;
+    }
+    nav li ul li a:hover {
+      background-color: #eee;
+    }
+    nav li:not(:last-child)::after {
+      content: "|";
+      margin-left: 10px;
+      color: #666;
+    }
+    nav li ul li:not(:last-child)::after {
+      content: "";
+    }
+  </style>
+</head>
+<body>
+  <h1>Mario Kart Gecko Stats</h1>
+
+  <p>Benvenuto nel mio sito personale dedicato alle statistiche di Mario Kart!</p>
+
+<nav>
+  <ul>
+    <li><a href="../../index.html">Home</a></li>
+    <li><a href="../mkworld/index.html">MKWorld</a>
+  <ul>
+    <li><a href="prove.html">Prove a tempo</a></li>
+    <li><a href="registry.html">Registry</a></li>
+  </ul>
+</li>
+    <li><a href="../mk8dx/index.html">MK8DX</a>
+      <ul>
+        <li><a href="pages/mk8dx/prove.html">Prove a tempo</a></li>
+        <li><a href="pages/mk8dx/registry.html">Registry</a></li>
+      </ul>
+    </li>
+    <li><strong>MKWii</strong>
+      <ul>
+        <li><a href="prove.html">Prove a tempo</a></li>
+        <li><a href="registry.html">Registry</a></li>
+      </ul>
+    </li>
+    <li><a href="../storia.html">Storia</a></li>
+    <li><a href="../ruoli.html">Ruoli nella Community</a></li>
+    <li><a href="../info.html">Info</a></li>
+  </ul>
+</nav>
+
+</body>
+</html>
