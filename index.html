@@ -90,6 +90,7 @@
       background: #1f2f73;
     }
 
+    /* Sottomenu desktop veloce e verticale */
     nav ul ul {
       display: none;
       position: absolute;
@@ -99,14 +100,11 @@
       border-radius: 4px;
       min-width: 200px;
       z-index: 1000;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity .3s;
+      opacity: 1;
+      pointer-events: auto;
     }
     nav li:hover > ul {
       display: block;
-      opacity: 1;
-      pointer-events: auto;
     }
 
     nav ul ul li {
@@ -262,28 +260,52 @@
       nav ul {
         flex-direction: column;
         gap: 10px;
-        display: none;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
         width: 100%;
         background: #0a1a3f;
-        padding: 10px;
+        padding: 0 10px;
         border-radius: 10px;
         margin-top: 10px;
       }
       nav li {
         margin-left: 0;
       }
+      /* Nascondi i sottomenu nel menu hamburger */
       nav ul ul {
-        position: static;
+        display: none !important;
+        position: static !important;
       }
       nav ul ul li {
         padding-left: 10px;
       }
       #nav-menu.open ul {
+        max-height: 1000px;
+        opacity: 1;
+        padding: 10px;
         display: flex;
       }
       #mobile-menu-toggle {
         display: block;
       }
+
+      /* Modifiche per footer sempre in fondo su mobile */
+      html, body {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+      }
+      main, .category-section {
+        flex-grow: 1;
+      }
+      .site-footer {
+        flex-shrink: 0;
+      }
+
       main, .category-section, .highlight-title {
         max-width: 95vw;
         margin: 20px 10px;
@@ -321,7 +343,7 @@
     </div>
     <nav id="nav-menu">
       <ul>
-        <li><strong><span style="color:#cfd0ff;text-decoration:underline">Home</span></strong></li>
+        <li><a href="#" style="color:#cfd0ff; text-decoration: underline;">Home</a></li>
         <li><a href="pages/mkworld/index.html">MKWorld</a>
           <ul>
             <li><a href="pages/mkworld/prove.html">Prove a tempo</a></li>
@@ -391,7 +413,7 @@
     </div>
     <div class="footer-right">
       <a href="pages/info.html">Info</a>
-      <span>© 2025 mkgeckostats.com · Mario Kart™ e © Nintendo</span>
+      <span>© 2025 https://gecko491.github.io/MKGeckoStats/ · Mario Kart™ e © Nintendo</span>
     </div>
   </footer>
 
